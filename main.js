@@ -195,6 +195,7 @@ function replay() {
   BOARD.innerHTML = "";
   startGame();
   cardsWon = 0;
+  let boardCards = cards.forEach((card) => card.addEventListener("click", flipCard));
 }
 
 document.addEventListener("DOMContentLoaded", function () {
